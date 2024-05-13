@@ -1,4 +1,4 @@
-package com.venkat.java.interfacesconcept.defaultmethod;
+package com.venkat.java.interfacesconcept.defaultandstaticmethod;
 
 public class Demo {
 
@@ -7,7 +7,7 @@ public class Demo {
         i.aMethod1(); //This comes from the interface which was not implemented in the interface but was overidden and implemented in implementingclass
         i.dMethod2();//Interface's default method can also be called directly
         i.dMethod3();//This is not overidden in implementing class hence it would be taken directly from interface
-
+        Vehicle.sMethod4();//The static methods are not inherited by implementing classes and cannot be overridden
     }
 
 }

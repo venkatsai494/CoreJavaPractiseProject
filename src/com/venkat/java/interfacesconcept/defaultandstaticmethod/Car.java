@@ -1,4 +1,4 @@
-package com.venkat.java.interfacesconcept.defaultmethod;
+package com.venkat.java.interfacesconcept.defaultandstaticmethod;
 
 public class Car implements Vehicle {
     @Override

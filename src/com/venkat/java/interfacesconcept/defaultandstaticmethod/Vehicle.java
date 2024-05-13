@@ -1,4 +1,4 @@
-   package com.venkat.java.interfacesconcept.defaultmethod;
+   package com.venkat.java.interfacesconcept.defaultandstaticmethod;
 
 interface Vehicle {
 
@@ -10,5 +10,9 @@ interface Vehicle {
 
     default void dMethod3(){
         System.out.println("This method is a default method from Interface and it is not overriden");
+    }
+
+    static void sMethod4(){
+        System.out.println("This is static method from Interface");//The static methods are not inherited by implementing classes and cannot be overridden
     }
 }
