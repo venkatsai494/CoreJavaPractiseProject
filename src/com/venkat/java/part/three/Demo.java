@@ -25,7 +25,7 @@ public class Demo {
         System.out.println("************");
 
         Car c1 = new BMW();//*IMP* (Dynamic Polymorphism) or run time polymorphism. Child class object is referred by parent class reference variable.
-        //*IMP* Top Casting - Child class object is referred by Parent class reference variable
+        //*IMP* Top Casting or Up Casting- Child class object is referred by Parent class reference variable
         c1.start();//*IMP* it will call the child class method as the object is created for child class
         c1.stop();
         c1.reFuel();
@@ -33,6 +33,8 @@ public class Demo {
 
         //Down Casting
 //		BMW b1 = new Car();//Parent class object cannot fit into child class reference variable. For this we need to cast the object
+        BMW cb = (BMW)c1;// This is how down casting can be done
+        cb.theftSafety();// we can now call the exclusive method defined in BMW using down casting.
 
         System.out.println("************");
 
