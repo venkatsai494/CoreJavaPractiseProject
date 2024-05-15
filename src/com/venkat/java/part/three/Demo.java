@@ -42,10 +42,10 @@ public class Demo {
 //        b1.start();
 //        b1.engine();
 //        b1.reFuel();
-
+        System.out.println(main(1));// We cannot call a non static method in a static method and unless and until it is static it would serve as an entry point to the program.
     }
 
-    public int main(int a) {
+    public static int main(int a) {
         return a;
     }
 
