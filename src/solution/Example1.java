@@ -28,11 +28,24 @@ public class Example1 {
             }
         };
 
+        Comparator<String> comp1 = new Comparator<String>() {
+            public int compare(String o1, String o2) {
+                return (o1.compareToIgnoreCase(o2));
+                /*
+An int value: 0 if the string is equal to the other string, ignoring case differences.
+< 0 if the string is lexicographically less than the other string
+> 0 if the string is lexicographically greater than the other string (more characters)
+                 */
+            }
+        };
+
         Example1 ex = new Example1();
         System.out.println(ex.names);//This would print the list as it is
         //Collections.sort(ex.names);//This would sort the sort and alter the original list
         //System.out.println(ex.names);
         Collections.sort(ex.names, comp);// using the Comparator reference here to write our own logic for sorting
+        System.out.println(ex.names);
+        Collections.sort(ex.names, comp1);// Sorting the strings in a lexicographical (dictionary) order
         System.out.println(ex.names);
     }
 }
