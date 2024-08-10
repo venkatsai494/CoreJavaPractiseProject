@@ -1,4 +1,4 @@
-package com.designpatterns.factory;
+package com.designpatterns.creational.factory;
 
 public class TriangleFactory implements ShapeFactory{
     @Override
