@@ -6,7 +6,10 @@ public class SingletonClass {
     private static SingletonClass instance;
 
     // Private constructor to prevent instantiation from outside the class
-    private SingletonClass() {}
+    private SingletonClass() {
+        if(instance != null)//This would prevent the user to create another object of this class using Reflection attack
+            throw new RuntimeException("As the instance is not null another instance cannot be created");
+    }
 
     // Static method to provide global access point to the single instance
     public static SingletonClass getInstance() {
