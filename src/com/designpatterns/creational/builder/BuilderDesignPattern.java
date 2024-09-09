@@ -10,4 +10,9 @@ public class BuilderDesignPattern {
                         .build();
 
     }
+
+    SQLQuery sql = new SQLQuery.SQLQueryBuilder()
+            .setSelect("EMP_ID")
+            .setTable("EMPLOYEE")
+            .setWhereClause()
 }
