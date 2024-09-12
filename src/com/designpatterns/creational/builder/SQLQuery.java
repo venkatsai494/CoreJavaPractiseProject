@@ -1,45 +1,53 @@
 package com.designpatterns.creational.builder;
 
 public class SQLQuery {
-    private String select;
-    private String table;
+    private String selectClause;
+    private String fromClause;
     private String whereClause;
     private String orderByClause;
     private int limit;
 
-    private SQLQuery(SQLQueryBuilder builder) {
-        this.select = builder.select;
-        this.table = builder.table;
+    private SQLQuery(SQLQueryBuilder builder) throws IllegalArgumentException {
+        this.selectClause = builder.selectClause;
+        this.fromClause = builder.fromClause;
         this.whereClause = builder.whereClause;
         this.orderByClause = builder.orderByClause;
         this.limit = builder.limit;
+        if(selectClause == null || selectClause.isEmpty())
+            throw new IllegalArgumentException("SELECT clause cannot be null or empty");
+        if(fromClause == null || fromClause.isEmpty())
+            throw new IllegalArgumentException("FROM clause cannot be null or empty");
     }
-
     @Override
     public String toString(){
         StringBuilder query = new StringBuilder();
-        if(select!=null)
-            query.append("SELECT ").append(select).append(" ");
-        if(table!=null)
-            query.append("FROM ").append(table).append(" ");
+        if(selectClause !=null)
+            query.append("SELECT ").append(selectClause).append(" ");
+        if(fromClause !=null)
+            query.append("FROM ").append(fromClause).append(" ");
         if(whereClause!=null)
-            query.append("WHERE ").append(table).append(" ");
+            query.append("WHERE ").append(whereClause).append(" ");
+        if(orderByClause!=null)
+            query.append("ORDER BY ").append(orderByClause).append(" ");
+        if(limit!=0)
+            query.append("LIMIT ").append(limit);
         return query.toString().trim();
     }
 
+
     public static class SQLQueryBuilder {
-        private String select;
-        private String table;
+        private String selectClause;
+        private String fromClause;
         private String whereClause;
         private String orderByClause;
         private int limit;
 
         public SQLQueryBuilder setSelect(String select) {
-            this.select = select;
+            this.selectClause = select;
             return this;
         }
-        public SQLQueryBuilder setTable(String table) {
-            this.table = table;
+        public SQLQueryBuilder setFromClause(String fromClause) {
+            this.fromClause = fromClause;
             return this;
         }
 
@@ -58,8 +66,10 @@ public class SQLQuery {
             return this;
         }
 
-        public SQLQuery build() {
+        public SQLQuery build() throws IllegalArgumentException {
             return new SQLQuery(this);
         }
+
+
     }
 }
