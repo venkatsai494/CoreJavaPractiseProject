@@ -49,7 +49,7 @@ public class ComparatorExample {
         });
         System.out.println("Sorted order as per ascending order of age" + parpellis);
 
-        Collections.sort(parpellis, (p1, p2) -> (p2.getAge() - p1.getAge())); //Using lambda expression
+        Collections.sort(parpellis, (p1, p2) -> (p2.getAge() - p1.getAge())); //Using lambda expression; you might think if this compare method is returning an integer at the end of the day then why we cannot pass integer over here.
         System.out.println("Sorted order as per descending order of age" + parpellis);
 
     }
