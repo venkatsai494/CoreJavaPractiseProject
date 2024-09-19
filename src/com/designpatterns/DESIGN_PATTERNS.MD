@@ -7,7 +7,7 @@ These patterns deal with object creation mechanisms, trying to create objects in
 2. [**Factory Pattern:**](creational/factory/FACTORY_DESIGN_PATTERN.MD) Creates objects without specifying the exact class of the object that will be created.<br>
 3. **Abstract Factory Pattern:** Provides an interface for creating families of related or dependent objects without specifying their concrete classes.<br>
 4. [**Builder Pattern:**](creational/builder/BUILDER_DESIGN_PATTERN.MD) Separates the construction of a complex object from its representation, allowing the same construction process to create various representations.<br>
-5. **Prototype Pattern:** Creates new objects by copying an existing object, known as the prototype.<br>
+5. [**Prototype Pattern:**](creational/prototype/PROTOTYPE_DESIGN_PATTERN.MD) Creates new objects by copying an existing object, known as the prototype.<br>
 
 ## Structural Design Patterns
 These patterns deal with object composition or the relationship between objects.
