@@ -6,7 +6,6 @@ public class Car {
     int mod, wheel;
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         //Class is a kind of entity where we have to define the properties, varibales and method
         //methods are characteristics of a class
         //In Human Class Venkat's body is an object and (Venkat is refering to Venkat's body)

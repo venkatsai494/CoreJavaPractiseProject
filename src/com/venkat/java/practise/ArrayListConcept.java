@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public class ArrayListConcept {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         //*IMP* In arrays you need to define the size first. But in arraylist there is no such need to define the size
         //you cna store data of any data type in arraylist
         ArrayList ar = new ArrayList();

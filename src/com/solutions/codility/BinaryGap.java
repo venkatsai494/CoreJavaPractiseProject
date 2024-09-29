@@ -40,7 +40,6 @@ public class BinaryGap {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         BinaryGap bg1 = new BinaryGap();
         System.out.println(bg1.maxGapOfBinary(9));
         String testString = "10100";

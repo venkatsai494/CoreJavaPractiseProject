@@ -7,7 +7,6 @@ package com.venkat.java.practise; //This is the package which is similar to a fo
 public class DataTypes { // class name will always be preceded by keyword class
 
     public static void main(String[] args) { //Whenever you want to execute your java class make sure main method is there then only you would be able to execute a java class
-        // TODO Auto-generated method stub
         System.out.println("This is my first java");
 
         //Data Types

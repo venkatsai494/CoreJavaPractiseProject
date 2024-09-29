@@ -3,7 +3,6 @@ package com.venkat.java.part.two;
 public class MethodOverloading {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         MethodOverloading obj = new MethodOverloading();
         obj.sum();
         obj.sum(3);

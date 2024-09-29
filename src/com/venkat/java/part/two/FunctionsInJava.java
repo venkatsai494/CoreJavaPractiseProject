@@ -7,8 +7,6 @@ public class FunctionsInJava {
     //System.out.println("Hello");//This will throw an error
     //Main method is the starting point of execution. If you run the class without mentioning anything in the main method you won't get any output
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         FunctionsInJava obj = new FunctionsInJava();
 
         //*IMP* When you create an object then the copy of all "Non Static" methods will be given to the object. Object cannot static methods.

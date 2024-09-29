@@ -21,7 +21,6 @@ counter +1
 public class BackBaseInterview {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         int [] abc = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9};
         BackBaseInterview obj = new BackBaseInterview();
         System.out.println(obj.jumpsRequired(abc));

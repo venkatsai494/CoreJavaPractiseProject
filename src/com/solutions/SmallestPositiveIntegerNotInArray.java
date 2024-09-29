@@ -24,8 +24,6 @@ public class SmallestPositiveIntegerNotInArray {
     }
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         String s1 = "aaBb";
         String s2 = "DavibBd";
         System.out.println(returnChar(s1));

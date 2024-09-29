@@ -3,8 +3,6 @@ package com.venkat.java.practise;
 public class LoopsConcept {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         //Looping is used to do repeated operations
         int i =1;
         int j =1;

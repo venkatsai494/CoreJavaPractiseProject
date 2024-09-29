@@ -4,7 +4,6 @@ public class Demo {
 
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         BMW b = new BMW();
         b.start();//*IMP*(static plymorphism) or compile time polymorpism//As it has its own method for start it will access it.

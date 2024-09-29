@@ -3,7 +3,6 @@ package com.venkat.java.practise;
 public class ArrayConcepts {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         //Array is a collection of elements used to store values of similar data types, in a primitive data type only a single value can be stored at a time
         int i[] = new int[4];//which means i will be an array of integer data type tio store 4 values and index of array will start from 0 to (n-1)
 

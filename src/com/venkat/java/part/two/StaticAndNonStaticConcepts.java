@@ -6,8 +6,6 @@ public class StaticAndNonStaticConcepts {
     static int age = 29;//Static global variable
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         //How to call static methods and variables?
         //Direct Calling
         sum();

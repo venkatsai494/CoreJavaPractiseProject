@@ -3,7 +3,6 @@ package com.venkat.java.practise;
 public class IfElseConcept {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         int a, b, c;
         a=10;
         b=10;

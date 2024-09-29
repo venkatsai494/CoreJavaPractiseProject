@@ -5,8 +5,6 @@ public class CallByValueAndCallByRef {
     int q;
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         CallByValueAndCallByRef obj = new CallByValueAndCallByRef();
         int x = 10;
         int y = 20;

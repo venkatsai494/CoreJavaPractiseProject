@@ -7,8 +7,6 @@ import org.apache.commons.codec.binary.Base64;
 public class PasswordEncryptionDecryption {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         encryptPassword("pass@12345");
         decryptPassword("cGFzc0AxMjM0NQ==");
 

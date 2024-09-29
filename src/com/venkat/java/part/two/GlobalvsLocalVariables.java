@@ -6,8 +6,7 @@ public class GlobalvsLocalVariables {
     int age = 29;//**IMP** In order to use the global variables we need to create the object of the class
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-//		System.out.println(obj.age);//This won't work until you create the object of the class to access the class variables
+//        System.out.println(obj.age);//This won't work until you create the object of the class to access the class variables
         GlobalvsLocalVariables obj = new GlobalvsLocalVariables();
         System.out.println(obj.age);
         obj.sum();//This will print the age variable which is local for the method sum

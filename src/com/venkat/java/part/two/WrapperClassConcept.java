@@ -5,8 +5,6 @@ public class WrapperClassConcept {
     //Wrapper classes are used for data conversion the available wrapper classes are Integer, Double and Boolean
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
         String x = "100";//This will be treated as string
         System.out.println(x+20);//This will not add the numbers 100 and 20 instead it will concatenate
 
