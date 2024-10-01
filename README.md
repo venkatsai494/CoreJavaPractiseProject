@@ -2,6 +2,7 @@
 
 This is just for practise purpose
 
+* Java Architecture
 * Java Data types
 * [Collection](src/com/collection/COLLECTION.MD)
 * Annotations 
