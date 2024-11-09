@@ -33,3 +33,7 @@
 #### HashMap:
 #### LinkedHashMap:
 #### TreeMap:
+
+
+
+check for collectors.teeing() - https://www.linkedin.com/feed/update/urn:li:activity:7259182518707343361?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7259182518707343361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
