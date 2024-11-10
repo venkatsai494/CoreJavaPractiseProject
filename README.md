@@ -16,3 +16,4 @@ This is just for practise purpose
 * SOLID Principles 
 * Design Patterns 
 * Multi Threading
+* Serialization 
