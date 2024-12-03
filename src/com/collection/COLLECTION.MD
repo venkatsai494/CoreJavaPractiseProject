@@ -12,7 +12,7 @@
 
 ### List: 
 
-#### [ArrayList:](ArrayListExample.java)
+#### [ArrayList:](list/ArrayListExample.java)
 #### Vector:
 #### LinkedList:
 
