@@ -5,7 +5,9 @@ This is just for practise purpose
 * Java Architecture
 * Java Data types
 * [Java Keywords](src/com/keywords/KEYWORDS.MD)
+* [OOPs](src/com/oops/OOPS.MD)
 * [Collection](src/com/collection/COLLECTION.MD)
+* String Manipulation
 * Annotations 
 * Functional Interfaces 
 * Lambda Expressions 
@@ -13,7 +15,7 @@ This is just for practise purpose
 * Lombok 
 * Fillo 
 * Log4J 
-* SOLID Principles 
+* [SOLID Principles](src/com/solidprinciples/SOLID_PRINCIPLES.MD)
 * Design Patterns 
 * Multi Threading
 * Serialization 
