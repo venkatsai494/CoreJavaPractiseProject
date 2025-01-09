@@ -205,5 +205,3 @@ public class Main {
 *   When two objects need to interact but can exist independently.
 *   When the relationship is logical rather than structural.
 *   To model basic object collaborations without implying strong ownership or lifetime dependencies.
-
-Let me know if you'd like more examples or a comparison of all OOP principles together!
