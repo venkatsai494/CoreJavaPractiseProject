@@ -220,5 +220,3 @@ public class Main {
 Here, the `Player` can dynamically switch teams at runtime.
 
 * * *
-
-Let me know if you'd like more examples or a deeper dive into how aggregation fits into Java design patterns!
