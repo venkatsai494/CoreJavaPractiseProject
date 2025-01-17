@@ -8,6 +8,7 @@ This is just for practise purpose
 * [OOPs](src/com/oops/OOPS.MD)
 * [Collection](src/com/collection/COLLECTION.MD)
 * String Manipulation
+* Memory Management
 * Exceptions
 * Annotations 
 * Functional Interfaces 
