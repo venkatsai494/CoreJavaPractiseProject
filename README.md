@@ -19,5 +19,5 @@ This is just for practise purpose
 * Log4J 
 * [SOLID Principles](src/com/solidprinciples/SOLID_PRINCIPLES.MD)
 * Design Patterns 
-* Multi Threading
+* Multi Threading and Concurrency
 * Serialization 
