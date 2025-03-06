@@ -269,4 +269,233 @@ System.out.println(sb.toString()); // Hello Java
 ✅ **Comparison**: `equals()` for content, `==` for reference, `compareTo()` for lexicographic order.  
 ✅ **`StringBuilder` vs `StringBuffer`**: Use `StringBuilder` for performance; `StringBuffer` if thread safety is needed.
 
-The difference between [StringBuilder]() and [StringBuffer]() can be found [here]().
+The difference between [StringBuilder](STRING_BUILDER.MD) and [StringBuffer](STRING_BUFFER.MD) can be found [here]().
+
+
+Few more manipulation
+
+---
+
+## **📝 Complete List of Java String Methods with Examples**
+
+| **Method**            | **Description** |
+|----------------------|----------------|
+| `charAt(int index)`  | Returns character at the specified index. |
+| `length()`           | Returns the length of the string. |
+| `substring(int beginIndex, int endIndex)` | Extracts a portion of a string. |
+| `indexOf(String str)` | Returns the first index of the substring. |
+| `lastIndexOf(String str)` | Returns the last index of the substring. |
+| `startsWith(String prefix)` | Checks if string starts with a given prefix. |
+| `endsWith(String suffix)` | Checks if string ends with a given suffix. |
+| `contains(CharSequence s)` | Checks if string contains the given sequence. |
+| `equals(Object obj)` | Compares string content. |
+| `equalsIgnoreCase(String anotherString)` | Compares strings ignoring case. |
+| `compareTo(String anotherString)` | Lexicographically compares strings. |
+| `compareToIgnoreCase(String str)` | Case-insensitive lexicographical comparison. |
+| `concat(String str)` | Concatenates two strings. |
+| `replace(char oldChar, char newChar)` | Replaces occurrences of a character. |
+| `replaceAll(String regex, String replacement)` | Replaces substrings matching regex. |
+| `replaceFirst(String regex, String replacement)` | Replaces the first occurrence of regex. |
+| `toLowerCase()` | Converts to lowercase. |
+| `toUpperCase()` | Converts to uppercase. |
+| `trim()` | Removes leading and trailing spaces. |
+| `split(String regex)` | Splits a string using a regex delimiter. |
+| `toCharArray()` | Converts string to character array. |
+| `isEmpty()` | Checks if string is empty (`""`). |
+| `strip()` | Removes leading and trailing whitespace (Java 11+). |
+| `stripLeading()` | Removes only leading spaces (Java 11+). |
+| `stripTrailing()` | Removes only trailing spaces (Java 11+). |
+| `repeat(int count)` | Repeats the string `count` times (Java 11+). |
+| `join(CharSequence delimiter, CharSequence... elements)` | Joins multiple strings with a delimiter. |
+
+---
+
+## **🛠️ String Methods with Examples**
+
+### **1️⃣ Checking Start and End of a String**
+#### **Using `startsWith()`**
+```java
+String s = "Automation Testing";
+System.out.println(s.startsWith("Auto")); // true
+System.out.println(s.startsWith("Test")); // false
+```
+
+#### **Using `endsWith()`**
+```java
+System.out.println(s.endsWith("Testing")); // true
+System.out.println(s.endsWith("Auto")); // false
+```
+
+---
+
+### **2️⃣ Checking if a String Contains a Substring**
+#### **Using `contains()`**
+```java
+String s = "Selenium Testing";
+System.out.println(s.contains("Testing")); // true
+System.out.println(s.contains("Java")); // false
+```
+
+---
+
+### **3️⃣ Comparing Strings**
+#### **Using `equalsIgnoreCase()` (Case-insensitive)**
+```java
+String s1 = "hello";
+String s2 = "HELLO";
+System.out.println(s1.equalsIgnoreCase(s2)); // true
+```
+
+#### **Using `compareToIgnoreCase()`**
+```java
+String s1 = "apple";
+String s2 = "APPLE";
+System.out.println(s1.compareToIgnoreCase(s2)); // 0 (Equal)
+```
+
+---
+
+### **4️⃣ Checking if String is Empty**
+#### **Using `isEmpty()`**
+```java
+String s = "";
+System.out.println(s.isEmpty()); // true
+System.out.println("Hello".isEmpty()); // false
+```
+
+#### **Using `isBlank()` (Java 11+)**
+```java
+System.out.println("  ".isBlank()); // true (ignores whitespaces)
+System.out.println("Hello".isBlank()); // false
+```
+
+---
+
+### **5️⃣ Removing Whitespaces Efficiently**
+#### **Using `strip()` (Java 11+)**
+```java
+String s = "   Hello World   ";
+System.out.println(s.strip()); // "Hello World"
+```
+
+#### **Using `stripLeading()` and `stripTrailing()`**
+```java
+System.out.println(s.stripLeading());  // "Hello World   "
+System.out.println(s.stripTrailing()); // "   Hello World"
+```
+
+#### **Using `trim()`**
+```java
+System.out.println(s.trim()); // "Hello World" (Similar to `strip()`)
+```
+
+---
+
+### **6️⃣ Repeating a String (Java 11+)**
+```java
+String s = "Hello ";
+System.out.println(s.repeat(3)); // Hello Hello Hello 
+```
+
+---
+
+### **7️⃣ Joining Multiple Strings**
+```java
+String joined = String.join(", ", "Apple", "Banana", "Cherry");
+System.out.println(joined); // Apple, Banana, Cherry
+```
+
+---
+
+### **8️⃣ Splitting a String**
+```java
+String s = "apple,banana,grape";
+String[] arr = s.split(",");
+
+for (String word : arr) {
+    System.out.println(word);
+}
+```
+**Output:**
+```
+apple
+banana
+grape
+```
+
+---
+
+### **9️⃣ Converting a String to Character Array**
+```java
+String s = "Java";
+char[] charArray = s.toCharArray();
+for (char c : charArray) {
+    System.out.print(c + " "); // J a v a
+}
+```
+
+---
+
+### **🔟 Extracting a Substring**
+```java
+String s = "Programming";
+System.out.println(s.substring(0, 4)); // Prog
+System.out.println(s.substring(5));    // amming
+```
+
+---
+
+### **1️⃣1️⃣ Replacing Text in a String**
+```java
+String s = "Hello Java";
+System.out.println(s.replace('a', 'o')); // Hello Jovo
+System.out.println(s.replace("Java", "World")); // Hello World
+```
+
+---
+
+### **1️⃣2️⃣ Regular Expression Replacements**
+```java
+String s = "abc123xyz";
+System.out.println(s.replaceAll("[0-9]", "#")); // abc###xyz
+```
+
+---
+
+### **1️⃣3️⃣ Finding Index of a Character or Substring**
+```java
+String s = "Automation";
+System.out.println(s.indexOf('t'));  // 2
+System.out.println(s.indexOf("tom")); // 2
+System.out.println(s.indexOf("xyz")); // -1 (Not found)
+```
+```java
+System.out.println(s.lastIndexOf('t')); // 6
+```
+
+---
+
+## **🛠️ StringBuilder vs. StringBuffer**
+### **🔹 StringBuilder (Faster, Not Thread-Safe)**
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb.toString()); // Hello World
+```
+
+### **🔹 StringBuffer (Thread-Safe)**
+```java
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" Java");
+System.out.println(sb.toString()); // Hello Java
+```
+
+---
+
+## **📌 Summary of Key Takeaways**
+✅ `String` is immutable for efficiency, security, and thread safety.  
+✅ **Comparison methods**: `equals()`, `compareTo()`, `equalsIgnoreCase()`.  
+✅ **Searching**: `contains()`, `indexOf()`, `startsWith()`, `endsWith()`.  
+✅ **Modifications**: `replace()`, `replaceAll()`, `substring()`.  
+✅ **Splitting & Joining**: `split()`, `join()`, `repeat()`.  
+✅ **`StringBuilder` vs `StringBuffer`**: `StringBuilder` is faster, `StringBuffer` is thread-safe.
