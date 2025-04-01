@@ -4,6 +4,9 @@ public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         LongestSubstringWithoutRepeatingCharacters lswrc = new LongestSubstringWithoutRepeatingCharacters();
         System.out.println(lswrc.lengthOfLongestSubstring("dvdf"));
+        System.out.println(lswrc.lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lswrc.lengthOfLongestSubstring("bbbbb"));
+        System.out.println(lswrc.lengthOfLongestSubstring("abcabcbb"));
     }
 
     public int lengthOfLongestSubstring(String s) {
