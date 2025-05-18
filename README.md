@@ -10,6 +10,7 @@ This is just for practise purpose
 * Wrapper Classes
 * [Collection](src/com/collection/COLLECTION.MD)
 * [String Manipulation](src/com/string/STRING_MANIPULATION.MD)
+* JDBC Connection
 * Memory Management
 * Exceptions
 * Annotations 
@@ -23,4 +24,4 @@ This is just for practise purpose
 * Design Patterns 
 * [Multi Threading and Concurrency](src/com/multithreading/MULTITHREADING.MD)
 * Serialization 
-* [Miscellaneous topics](src/com/miscellaneous/MISCELLANEOUS.MD)
+* [Miscellaneous topics](src/com/miscellaneous/MISCELLANEOUS_TOPICS.MD)
