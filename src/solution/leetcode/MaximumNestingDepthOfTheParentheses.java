@@ -2,13 +2,15 @@ package solution.leetcode;
 
 public class MaximumNestingDepthOfTheParentheses {
     public static void main(String[] args) {
-        MaximumNestingDepthOfTheParentheses m = new MaximumNestingDepthOfTheParentheses();
-        System.out.println(m.maxDepth("(1+(2*3)+((8)/4))+1")); // Output: 3
-        System.out.println(m.maxDepth("(1)+((2))+(((3)))")); // Output: 3
-        System.out.println(m.maxDepth("1+(2*3)/(2-1)")); // Output: 1
-        System.out.println(m.maxDepth("1")); // Output: 0
+        MaximumNestingDepthOfTheParentheses mndp = new MaximumNestingDepthOfTheParentheses();
+        System.out.println(mndp.maxDepth("(1+(2*3)+((8)/4))+1")); // 3
+        System.out.println(mndp.maxDepth("(1)+((2))+(((3)))")); // 3
+        System.out.println(mndp.maxDepth("()(())((()()))")); // 3
+        System.out.println(mndp.maxDepth("()")); // 1
+        System.out.println(mndp.maxDepth("(())")); // 2
+        System.out.println(mndp.maxDepth("(()())")); // 2
+        System.out.println(mndp.maxDepth("()()")); // 1
     }
-
     public int maxDepth(String s) {
         int result = 0;
         int depth = 0;
