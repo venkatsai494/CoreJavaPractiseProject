@@ -1,21 +1,15 @@
 package solution.leetcode;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
 
 public class InsertGreatestCommonDivisorsInLinkedList {
     public static void main(String[] args) {
-        InsertGreatestCommonDivisorsInLinkedList solution = new InsertGreatestCommonDivisorsInLinkedList();
-        ListNode head = new ListNode(18);
-        head.next = new ListNode(24);
-        head.next.next = new ListNode(36);
-        ListNode result = solution.insertGreatestCommonDivisors(head);
-
-        // Print the modified linked list
-        while (result != null) {
+        InsertGreatestCommonDivisorsInLinkedList igcd = new InsertGreatestCommonDivisorsInLinkedList();
+        ListNode head = igcd.new ListNode(18);
+        head.next = igcd.new ListNode(6);
+        head.next.next = igcd.new ListNode(10);
+        head.next.next.next = igcd.new ListNode(3);
+        ListNode result = igcd.insertGreatestCommonDivisors(head);
+        while(result != null){
             System.out.print(result.val + " ");
             result = result.next;
         }
@@ -41,4 +35,19 @@ public class InsertGreatestCommonDivisorsInLinkedList {
         }
         return 1;
     }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {}
+        ListNode(int val) {
+            this.val = val;
+        }
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
 }
